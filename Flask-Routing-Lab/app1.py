@@ -11,6 +11,10 @@ app = Flask(  # Create a flask app
 @app.route('/')
 def main():
     return render_template("home.html")
+
+@app.route('/product')
+def product():
+    return render_template("product.html")
     
 
 
